@@ -14,7 +14,7 @@
 
 <img src="assets/divider_v2_toolkit.svg" width="100%" style="display:block;margin:0;" alt=""/>
 <div align="center" style="line-height:0;">
-<img src="assets/skill_matrix.svg" width="95%" alt="Blade Sharpness Matrix"/>
+<img src="assets/skill_matrix.svg" width="100%" alt="Blade Sharpness Matrix"/>
 </div>
 
 <img src="assets/divider_v2_current_cuts.svg" width="100%" style="display:block;margin:0;" alt=""/>
