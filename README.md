@@ -155,7 +155,7 @@ Everything I'm building connects back to one question: how do I build things tha
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
     ║   Name:  Hardeep Dilip Shetty                                ║
-    ║   Alias: Dashetty — from “Dash” + “Shetty”                   ║
+    ║   Alias: dashetty                                            ║
     ║   📍  Location: Manipal, India                                ║
     ║   🎯  Status: Open to opportunities & collaborations          ║
     ║   🧠  Current obsession: AI × System Design × Public Impact   ║
