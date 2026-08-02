@@ -23,57 +23,6 @@
 <img src="assets/currently_cutting.svg" width="95%" alt="Currently on the Mat"/>
 </div>
 
-<img src="assets/divider_v2_finished_cuts.svg" width="100%" alt=""/>
-
-<table>
-<tr>
-<td width="50%">
-
-<a href="https://github.com/Dashetty/Hardeep-Shetty-Portfolio">
-<img src="assets/project_v2_portfolio.svg" width="100%" alt="Portfolio"/>
-</a>
-
-</td>
-<td width="50%">
-
-<a href="https://github.com/Dashetty/Vista-Club-Forms-Collector">
-<img src="assets/project_v2_vista_forms.svg" width="100%" alt="Vista Forms"/>
-</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-<a href="https://github.com/Dashetty/Tumor-Volume-Calculation-using-FDG-PET-">
-<img src="assets/project_v2_pet_tumor_calc.svg" width="100%" alt="PET Tumor Calc"/>
-</a>
-
-</td>
-<td width="50%">
-
-<a href="https://github.com/Dashetty/LetterboxdQuickPreview">
-<img src="assets/project_v2_letterboxd_preview.svg" width="100%" alt="Letterboxd Preview"/>
-</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-<a href="https://github.com/Dashetty/RememeberTada">
-<img src="assets/project_v2_rememebertada.svg" width="100%" alt="RememeberTada"/>
-</a>
-
-</td>
-<td width="50%">
-
-<img src="assets/project_v2_empty.svg" width="100%" alt="Empty slot — open to ideas"/>
-
-</td>
-</tr>
-</table>
-
 <img src="assets/divider_v2_connect.svg" width="100%" alt=""/>
 <img src="assets/registration.svg" width="100%" alt="Registration Marks"/>
 

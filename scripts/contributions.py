@@ -29,8 +29,8 @@ PALETTE = {
 }
 LEVELS = ["#0f2e1c", "#1c4d30", "#2e7d4f", "#4d9b66", "#7cb342"]
 
-CELL = 11
-GAP = 3
+CELL = 17
+GAP = 4
 PITCH = CELL + GAP
 MONTH_NAMES = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -61,7 +61,7 @@ def build_svg(days, total):
     if not days:
         raise SystemExit("No contribution data parsed")
     dates = sorted(days)
-    first, last = dates[0], dates[-1]
+    first = dates[0]
 
     first_sunday = first - dt.timedelta(days=(first.weekday() + 1) % 7)
 
@@ -74,8 +74,8 @@ def build_svg(days, total):
     n_weeks = max(w for w, _ in grid) + 1
     width = n_weeks * PITCH
     left = (1200 - width) // 2
-    top = 88
-    height = top + 7 * PITCH + 46
+    top = 52
+    height = top + 7 * PITCH + 44
 
     months = []
     for w in range(n_weeks):
@@ -92,9 +92,10 @@ def build_svg(days, total):
             f'rx="2" fill="{LEVELS[level]}"/>'
         )
 
-    legend_x = 600 - 95
+    legend_y = top + 7 * PITCH + 18
+    legend_x = 600 - 100
     legend = "\n".join(
-        f'    <rect x="{legend_x + i * 18}" y="{height - 34}" width="{CELL}" '
+        f'    <rect x="{legend_x + i * 18}" y="{legend_y}" width="{CELL}" '
         f'height="{CELL}" rx="2" fill="{c}"/>'
         for i, c in enumerate(LEVELS)
     )
@@ -103,19 +104,20 @@ def build_svg(days, total):
     for row, label in [(0, "Sun"), (1, "Mon"), (3, "Wed"), (5, "Fri")]:
         y = top + row * PITCH + CELL - 1
         weekday_labels += (
-            f'    <text x="{left - 8}" y="{y}" font-family="monospace" '
-            f'font-size="9" fill="{PALETTE["accent"]}" text-anchor="end" '
-            f'opacity="0.55">{label}</text>\n'
+            f'    <text x="{left - 10}" y="{y}" font-family="monospace" '
+            f'font-size="11" fill="{PALETTE["accent"]}" text-anchor="end" '
+            f'opacity="0.75">{label}</text>\n'
         )
 
     month_labels = ""
     for x, name in months:
         month_labels += (
-            f'    <text x="{x}" y="{top - 12}" font-family="monospace" '
-            f'font-size="9" fill="{PALETTE["accent"]}" opacity="0.6">{name}</text>\n'
+            f'    <text x="{x}" y="{top - 10}" font-family="monospace" '
+            f'font-size="11" fill="{PALETTE["accent"]}" opacity="0.8">{name}</text>\n'
         )
 
-    stats_line = f'{len(dates)} DAYS · {total if total is not None else sum(days.values())} CONTRIBUTIONS · LAST 365 DAYS'
+    total_c = total if total is not None else sum(days.values())
+    stats_line = f"{total_c} CONTRIBUTIONS · LAST 365 DAYS"
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {height}">
   <defs>
@@ -127,17 +129,14 @@ def build_svg(days, total):
   <rect width="1200" height="{height}" fill="{PALETTE["bg"]}"/>
   <rect width="1200" height="{height}" fill="url(#contribGrid)"/>
 
-  <text x="600" y="38" font-family="'SF Mono', monospace" font-size="13" fill="{PALETTE["title"]}"
-        text-anchor="middle" letter-spacing="5">CONTRIBUTION CALENDAR</text>
-  <text x="600" y="56" font-family="monospace" font-size="10" fill="{PALETTE["accent"]}"
-        text-anchor="middle" opacity="0.5">{stats_line}</text>
-  <line x1="250" y1="64" x2="950" y2="64" stroke="{PALETTE["accent"]}" stroke-width="1" opacity="0.3"/>
+  <text x="600" y="26" font-family="'SF Mono', monospace" font-size="12" fill="{PALETTE["accent"]}"
+        text-anchor="middle" letter-spacing="2" opacity="0.8">{stats_line}</text>
+  <line x1="400" y1="36" x2="800" y2="36" stroke="{PALETTE["accent"]}" stroke-width="1" opacity="0.25"/>
 
 {month_labels}{weekday_labels}{"".join(cells + ["\n"])}
-  <text x="456" y="{height - 34 + CELL}" font-family="monospace" font-size="9" fill="{PALETTE["accent"]}" opacity="0.55">LESS</text>
+  <text x="{legend_x - 32}" y="{legend_y + CELL - 1}" font-family="monospace" font-size="11" fill="{PALETTE["accent"]}" text-anchor="end" opacity="0.7">LESS</text>
 {legend}
-  <text x="{600 + 60}" y="{height - 34 + CELL}" font-family="monospace" font-size="9" fill="{PALETTE["accent"]}" opacity="0.55">MORE</text>
-  <text x="600" y="{height - 12}" font-family="monospace" font-size="9" fill="{PALETTE["accent"]}" text-anchor="middle" opacity="0.35">SELF-HOSTED · REFRESHED WEEKLY BY GITHUB ACTION</text>
+  <text x="{legend_x + 5 * 18 + 10}" y="{legend_y + CELL - 1}" font-family="monospace" font-size="11" fill="{PALETTE["accent"]}" opacity="0.7">MORE</text>
 </svg>
 """
     return svg
