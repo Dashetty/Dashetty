@@ -159,13 +159,13 @@
   <!-- Name -->
   <text x="600" y="175" 
         font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" 
-        font-size="54" 
+        font-size="52" 
         font-weight="700" 
         fill="#e8f5e9" 
         text-anchor="middle"
-        letter-spacing="8"
+        letter-spacing="6"
         filter="url(#textGlow)">
-    H A R D E E P
+    HARDEEP DILIP SHETTY
   </text>
   <text x="600" y="220" 
         font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" 

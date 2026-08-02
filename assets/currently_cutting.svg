@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250">
   <defs>
     <pattern id="wipGrid" width="10" height="10" patternUnits="userSpaceOnUse">
       <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#142e1f" stroke-width="0.3"/>
@@ -70,15 +70,9 @@
     <text x="173" y="49" font-family="monospace" font-size="9" fill="#7cb342">88%</text>
   </g>
 
-  <!-- Bottom note -->
-  <text x="500" y="190" font-family="monospace" font-size="10" fill="#7cb342" 
-        text-anchor="middle" opacity="0.4">
-    [ DASHED LINES INDICATE ACTIVE WORK IN PROGRESS · NO CUT IS EVER TRULY FINAL ]
-  </text>
-
   <!-- Throughline -->
-  <text x="500" y="222" font-family="monospace" font-size="10" fill="#e8f5e9"
+  <text x="500" y="216" font-family="monospace" font-size="10" fill="#e8f5e9"
         text-anchor="middle" opacity="0.85">I build things that are both technically sound and human-centered. AI is a tool, system design is</text>
-  <text x="500" y="238" font-family="monospace" font-size="10" fill="#e8f5e9"
+  <text x="500" y="232" font-family="monospace" font-size="10" fill="#e8f5e9"
         text-anchor="middle" opacity="0.85">the foundation, and the interface is where they meet — which is why the pixels still matter.</text>
 </svg>
