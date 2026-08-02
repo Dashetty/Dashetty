@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48">
+  <defs>
+    <pattern id="badgeGridG" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#142e1f" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="280" height="48" rx="24" fill="#0a1f14" stroke="#1a3d2a" stroke-width="1.5"/>
+  <rect width="280" height="48" rx="24" fill="url(#badgeGridG)"/>
+  <rect x="3" y="3" width="274" height="42" rx="21" fill="none" stroke="#7cb342" stroke-width="1" opacity="0.7"/>
+  <text x="140" y="29" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#aed581" letter-spacing="2">[ GITHUB · @Dashetty ]</text>
+</svg>

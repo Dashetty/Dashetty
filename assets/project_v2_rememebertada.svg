@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 210">
+  <defs>
+    <pattern id="cardGrid5" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#142e1f" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="210" rx="8" fill="#0a1f14" stroke="#1a3d2a" stroke-width="2"/>
+  <rect width="480" height="210" rx="8" fill="url(#cardGrid5)"/>
+  <rect x="10" y="10" width="460" height="190" rx="5" fill="none" stroke="#7cb342" stroke-width="1.2" stroke-dasharray="8,5" opacity="0.6"/>
+  <text x="240" y="78" text-anchor="middle" font-family="monospace" font-size="18" font-weight="bold" fill="#e8f5e9">RememeberTada</text>
+  <text x="240" y="99" text-anchor="middle" font-family="monospace" font-size="10" fill="#aed581" opacity="0.75">RememeberTada</text>
+  <rect x="161" y="118" width="158" height="20" rx="10" fill="#0f2e1c" stroke="#1a3d2a" stroke-width="1"/>
+  <text x="240" y="132" text-anchor="middle" font-family="monospace" font-size="10" fill="#7cb342">Python · Flask · ntfy.sh</text>
+  <text x="240" y="178" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#7cb342" opacity="0.45">[ CARD IN PROGRESS · REPLACING SOON ]</text>
+</svg>
