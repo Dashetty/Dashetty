@@ -192,16 +192,6 @@
     MEASURE TWICE  ·  CUT ONCE  ·  SHIP ALWAYS
   </text>
 
-  <!-- Bottom metadata line -->
-  <text x="600" y="315" 
-        font-family="monospace" 
-        font-size="10" 
-        fill="#7cb342" 
-        text-anchor="middle"
-        opacity="0.45">
-    [ GRID: 1cm × 1cm ]  [ MATERIAL: CODE ]  [ TOOL: CURIOSITY ]  [ STATUS: BUILDING IN PUBLIC ]
-  </text>
-
   <!-- Small decorative: a "blade" icon -->
   <g transform="translate(1058, 308)" opacity="0.3">
     <path d="M 0 0 L 15 0 L 15 25 L 7.5 35 L 0 25 Z" fill="#7cb342"/>

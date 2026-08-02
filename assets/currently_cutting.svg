@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260">
   <defs>
     <pattern id="wipGrid" width="10" height="10" patternUnits="userSpaceOnUse">
       <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#142e1f" stroke-width="0.3"/>
@@ -8,10 +8,10 @@
   <rect width="1000" height="200" rx="8" fill="#0a1f14" stroke="#1a3d2a" stroke-width="2"/>
   <rect width="1000" height="200" rx="8" fill="url(#wipGrid)"/>
 
-  <!-- Title -->
-  <text x="500" y="35" font-family="'SF Mono', monospace" font-size="14" fill="#7cb342" 
-        text-anchor="middle" letter-spacing="4" opacity="0.8">CURRENTLY ON THE MAT</text>
-  <line x1="350" y1="45" x2="650" y2="45" stroke="#7cb342" stroke-width="1" opacity="0.3"/>
+  <!-- Caption -->
+  <text x="500" y="32" font-family="'SF Mono', monospace" font-size="12" font-style="italic" fill="#aed581"
+        text-anchor="middle" opacity="0.85">Dashed lines mean the cut isn't finished yet. But it will be.</text>
+  <line x1="350" y1="44" x2="650" y2="44" stroke="#7cb342" stroke-width="1" opacity="0.3"/>
 
   <!-- Cut lines (dashed, showing work in progress) -->
   <g stroke="#7cb342" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.6">
@@ -71,8 +71,14 @@
   </g>
 
   <!-- Bottom note -->
-  <text x="500" y="185" font-family="monospace" font-size="10" fill="#7cb342" 
+  <text x="500" y="190" font-family="monospace" font-size="10" fill="#7cb342" 
         text-anchor="middle" opacity="0.4">
     [ DASHED LINES INDICATE ACTIVE WORK IN PROGRESS · NO CUT IS EVER TRULY FINAL ]
   </text>
+
+  <!-- Throughline -->
+  <text x="500" y="222" font-family="monospace" font-size="10" fill="#e8f5e9"
+        text-anchor="middle" opacity="0.85">I build things that are both technically sound and human-centered. AI is a tool, system design is</text>
+  <text x="500" y="238" font-family="monospace" font-size="10" fill="#e8f5e9"
+        text-anchor="middle" opacity="0.85">the foundation, and the interface is where they meet — which is why the pixels still matter.</text>
 </svg>

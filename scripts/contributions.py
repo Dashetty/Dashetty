@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+"""Generate a mat-themed contribution calendar SVG for a GitHub profile.
+
+Data source: the public yearly-contributions endpoint (no auth required).
+The endpoint returns HTML; this script scrapes the calendar cells
+(data-date + data-level), then renders assets/contributions.svg in the
+same palette as the rest of the profile (a self-hosted alternative to
+third-party image services).
+"""
+
+import datetime as dt
+import os
+import re
+import sys
+import urllib.request
+
+USERNAME = "Dashetty"
+OUTPUT = os.path.join(os.path.dirname(__file__), "..", "assets", "contributions.svg")
+ENDPOINT = f"https://github.com/users/{USERNAME}/contributions"
+
+PALETTE = {
+    "bg": "#0a1f14",
+    "border": "#1a3d2a",
+    "grid": "#142e1f",
+    "cell_empty": "#0f2e1c",
+    "title": "#aed581",
+    "accent": "#7cb342",
+    "text": "#e8f5e9",
+}
+LEVELS = ["#0f2e1c", "#1c4d30", "#2e7d4f", "#4d9b66", "#7cb342"]
+
+CELL = 11
+GAP = 3
+PITCH = CELL + GAP
+MONTH_NAMES = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def fetch_html():
+    req = urllib.request.Request(ENDPOINT, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read().decode("utf-8", "replace")
+
+
+def parse_days(html):
+    pattern = re.compile(r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="([0-4])"')
+    days = {}
+    for date_str, level in pattern.findall(html):
+        days[dt.date.fromisoformat(date_str)] = int(level)
+    return days
+
+
+def parse_total(html):
+    match = re.search(r'js-contribution-activity-description[^>]*>\s*(\d[\d,]*)\s*', html)
+    if match:
+        return int(match.group(1).replace(",", ""))
+    return None
+
+
+def build_svg(days, total):
+    if not days:
+        raise SystemExit("No contribution data parsed")
+    dates = sorted(days)
+    first, last = dates[0], dates[-1]
+
+    first_sunday = first - dt.timedelta(days=(first.weekday() + 1) % 7)
+
+    grid = {}
+    for d, level in days.items():
+        week = (d - first_sunday).days // 7
+        row = (d.weekday() + 1) % 7
+        grid[(week, row)] = level
+
+    n_weeks = max(w for w, _ in grid) + 1
+    width = n_weeks * PITCH
+    left = (1200 - width) // 2
+    top = 88
+    height = top + 7 * PITCH + 46
+
+    months = []
+    for w in range(n_weeks):
+        d = first_sunday + dt.timedelta(weeks=w)
+        if d.day <= 7 and d.month != first_sunday.month:
+            months.append((left + w * PITCH, MONTH_NAMES[d.month]))
+
+    cells = []
+    for (week, row), level in grid.items():
+        x = left + week * PITCH
+        y = top + row * PITCH
+        cells.append(
+            f'    <rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
+            f'rx="2" fill="{LEVELS[level]}"/>'
+        )
+
+    legend_x = 600 - 95
+    legend = "\n".join(
+        f'    <rect x="{legend_x + i * 18}" y="{height - 34}" width="{CELL}" '
+        f'height="{CELL}" rx="2" fill="{c}"/>'
+        for i, c in enumerate(LEVELS)
+    )
+
+    weekday_labels = ""
+    for row, label in [(0, "Sun"), (1, "Mon"), (3, "Wed"), (5, "Fri")]:
+        y = top + row * PITCH + CELL - 1
+        weekday_labels += (
+            f'    <text x="{left - 8}" y="{y}" font-family="monospace" '
+            f'font-size="9" fill="{PALETTE["accent"]}" text-anchor="end" '
+            f'opacity="0.55">{label}</text>\n'
+        )
+
+    month_labels = ""
+    for x, name in months:
+        month_labels += (
+            f'    <text x="{x}" y="{top - 12}" font-family="monospace" '
+            f'font-size="9" fill="{PALETTE["accent"]}" opacity="0.6">{name}</text>\n'
+        )
+
+    stats_line = f'{len(dates)} DAYS · {total if total is not None else sum(days.values())} CONTRIBUTIONS · LAST 365 DAYS'
+
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {height}">
+  <defs>
+    <pattern id="contribGrid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="{PALETTE["grid"]}" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="{height}" fill="{PALETTE["bg"]}"/>
+  <rect width="1200" height="{height}" fill="url(#contribGrid)"/>
+
+  <text x="600" y="38" font-family="'SF Mono', monospace" font-size="13" fill="{PALETTE["title"]}"
+        text-anchor="middle" letter-spacing="5">CONTRIBUTION CALENDAR</text>
+  <text x="600" y="56" font-family="monospace" font-size="10" fill="{PALETTE["accent"]}"
+        text-anchor="middle" opacity="0.5">{stats_line}</text>
+  <line x1="250" y1="64" x2="950" y2="64" stroke="{PALETTE["accent"]}" stroke-width="1" opacity="0.3"/>
+
+{month_labels}{weekday_labels}{"".join(cells + ["\n"])}
+  <text x="456" y="{height - 34 + CELL}" font-family="monospace" font-size="9" fill="{PALETTE["accent"]}" opacity="0.55">LESS</text>
+{legend}
+  <text x="{600 + 60}" y="{height - 34 + CELL}" font-family="monospace" font-size="9" fill="{PALETTE["accent"]}" opacity="0.55">MORE</text>
+  <text x="600" y="{height - 12}" font-family="monospace" font-size="9" fill="{PALETTE["accent"]}" text-anchor="middle" opacity="0.35">SELF-HOSTED · REFRESHED WEEKLY BY GITHUB ACTION</text>
+</svg>
+"""
+    return svg
+
+
+def main():
+    html = fetch_html()
+    days = parse_days(html)
+    total = parse_total(html)
+    out = os.path.abspath(OUTPUT)
+    svg = build_svg(days, total)
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"wrote {out} ({len(days)} days, {total or sum(days.values())} contributions)")
+
+
+if __name__ == "__main__":
+    main()
