@@ -9,18 +9,14 @@
 
 <br><br>
 
-```
-╔═══════════════════════════════════════════════════════════════════════════════╗
-║  GRID: 1cm × 1cm  │  MATERIAL: CODE  │  TOOL: CURIOSITY  │  STATUS: BUILDING IN PUBLIC  ║
-╚═══════════════════════════════════════════════════════════════════════════════╝
-```
+<img src="assets/status_bar.svg" width="100%" alt="GRID: 1cm × 1cm · MATERIAL: CODE · TOOL: CURIOSITY · STATUS: BUILDING IN PUBLIC"/>
 
 </div>
 
 <!-- ─── WORKBENCH: IDENTITY & PHILOSOPHY ───────────────────────────────── -->
 <img src="assets/divider_v2_workbench.svg" width="100%" alt=""/>
 
-### 📐 The Workbench
+### The Workbench
 
 > *"I don't start things I don't intend to finish. And I don't finish things that aren't worth starting."*
 
@@ -38,15 +34,15 @@ I build software the way a craftsperson builds furniture — with attention to g
 
 **How I work:**
 
-- 🎯 **Finisher mentality** — I pick up a task and see it through. No abandoned repos, no half-baked PRs.
-- 🔬 **Pixel-perfect obsession** — My product designer eye doesn't sleep. If something is off by 2px, I *will* notice.
-- 🧠 **Curiosity-first** — Currently submerged in AI, studying system design, and always looking for the edge where technology meets human need.
-- 🌐 **Public by default** — Building in the open. Open repos, open process, open to feedback.
+- **Finisher mentality** — I pick up a task and see it through. No abandoned repos, no half-baked PRs.
+- **Pixel-perfect obsession** — My product designer eye doesn't sleep. If something is off by 2px, I *will* notice.
+- **Curiosity-first** — Currently submerged in AI, studying system design, and always looking for the edge where technology meets human need.
+- **Public by default** — Building in the open. Open repos, open process, open to feedback.
 
 <!-- ─── TOOLKIT: SKILLS ────────────────────────────────────────────────── -->
 <img src="assets/divider_v2_toolkit.svg" width="100%" alt=""/>
 
-### 🔪 Blade Sharpness Matrix
+### Blade Sharpness Matrix
 
 *Every tool has its edge. Here's where mine currently cut:*
 
@@ -61,7 +57,7 @@ I build software the way a craftsperson builds furniture — with attention to g
 <!-- ─── CURRENT CUTS: WORK IN PROGRESS ───────────────────────────────────── -->
 <img src="assets/divider_v2_current_cuts.svg" width="100%" alt=""/>
 
-### ✂️ Currently on the Mat
+### Currently on the Mat
 
 *Dashed lines mean the cut isn't finished yet. But it will be.*
 
@@ -78,7 +74,7 @@ Everything I'm building connects back to one question: how do I build things tha
 <!-- ─── FINISHED CUTS: PROJECTS ──────────────────────────────────────────── -->
 <img src="assets/divider_v2_finished_cuts.svg" width="100%" alt=""/>
 
-### 📏 Finished Cuts
+### Finished Cuts
 
 *Shipped. Used. Accounted for.*
 
@@ -149,17 +145,17 @@ Everything I'm building connects back to one question: how do I build things tha
 <!-- ─── CONNECT: REGISTRATION MARKS ────────────────────────────────────── -->
 <img src="assets/divider_v2_connect.svg" width="100%" alt=""/>
 
-### 📍 Registration Marks
+### Registration Marks
 
 ```
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
-    ║   Name:  Hardeep Dilip Shetty                                ║
-    ║   Alias: dashetty                                            ║
-    ║   📍  Location: Manipal, India                                ║
-    ║   🎯  Status: Open to opportunities & collaborations          ║
-    ║   🧠  Current obsession: AI × System Design × Public Impact   ║
-    ║   🎨  Side quest: Graphic design, photography, visual craft   ║
+    ║   Name:              Hardeep Dilip Shetty                    ║
+    ║   Alias:             dashetty                                ║
+    ║   Location:          Manipal, India                          ║
+    ║   Status:            Open to opportunities & collaborations  ║
+    ║   Current obsession: AI × System Design × Public Impact      ║
+    ║   Side quest:        Design, photography, visual craft       ║
     ║                                                               ║
     ║   →  I build things that get used, not just starred           ║
     ║   →  I finish what I start                                    ║

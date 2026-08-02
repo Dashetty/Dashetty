@@ -23,7 +23,7 @@
 
   <!-- WIP Item 1: AI Deep Dive -->
   <g transform="translate(100, 95)">
-    <text x="0" y="0" font-family="monospace" font-size="13" fill="#e8f5e9" font-weight="bold">🧠 Submerging into AI</text>
+    <text x="0" y="0" font-family="monospace" font-size="13" fill="#e8f5e9" font-weight="bold">Submerging into AI</text>
     <text x="0" y="18" font-family="monospace" font-size="10" fill="#aed581" opacity="0.8">Understanding capabilities &amp; limits,</text>
     <text x="0" y="32" font-family="monospace" font-size="10" fill="#aed581" opacity="0.8">building with it, not for it.</text>
     <!-- Progress indicator -->
@@ -42,7 +42,7 @@
 
   <!-- WIP Item 2: System Design -->
   <g transform="translate(400, 95)">
-    <text x="0" y="0" font-family="monospace" font-size="13" fill="#e8f5e9" font-weight="bold">🏗️ System Design Study</text>
+    <text x="0" y="0" font-family="monospace" font-size="13" fill="#e8f5e9" font-weight="bold">System Design Study</text>
     <text x="0" y="18" font-family="monospace" font-size="10" fill="#aed581" opacity="0.8">Distributed systems &amp; scalability,</text>
     <text x="0" y="32" font-family="monospace" font-size="10" fill="#aed581" opacity="0.8">architecture of things that last.</text>
     <!-- Progress indicator -->
@@ -61,7 +61,7 @@
 
   <!-- WIP Item 3: Building in Public -->
   <g transform="translate(720, 95)">
-    <text x="0" y="0" font-family="monospace" font-size="13" fill="#e8f5e9" font-weight="bold">📡 Building in Public</text>
+    <text x="0" y="0" font-family="monospace" font-size="13" fill="#e8f5e9" font-weight="bold">Building in Public</text>
     <text x="0" y="18" font-family="monospace" font-size="10" fill="#aed581" opacity="0.8">Shipping work before it's perfect.</text>
     <text x="0" y="32" font-family="monospace" font-size="10" fill="#aed581" opacity="0.8">Repos, process, mind — all open.</text>
     <!-- Progress indicator -->
