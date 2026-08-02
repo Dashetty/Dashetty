@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 312">
   <defs>
     <pattern id="panelGrid" width="12" height="12" patternUnits="userSpaceOnUse">
       <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#142e1f" stroke-width="0.4"/>
     </pattern>
   </defs>
-  <rect width="1200" height="300" fill="#0a1f14"/>
-  <rect width="1200" height="300" fill="url(#panelGrid)"/>
-  <text x="120" y="26" font-family="'SF Mono', monospace" font-size="14" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0" font-style="italic">I don't start things I don't intend to finish. And I don't finish things that aren't worth starting.</text>
-  <line x1="120" y1="48" x2="1080" y2="48" stroke="#7cb342" stroke-width="1" opacity="0.25"/>
-  <text x="120" y="72" font-family="'SF Mono', monospace" font-size="11" fill="#7cb342" text-anchor="start" letter-spacing="4" opacity="0.85">WHAT DRIVES ME</text>
-  <text x="120" y="92" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Building things people use, not portfolio pieces that gather dust</text>
-  <text x="120" y="112" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Where engineering precision meets design intuition</text>
-  <text x="120" y="132" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ AI — knowing where it helps and where it fails</text>
-  <text x="120" y="152" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Distributed systems — architecture that scales and survives</text>
-  <text x="120" y="172" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Graphic design &amp; photography — crafts where millimeters matter</text>
-  <text x="120" y="194" font-family="'SF Mono', monospace" font-size="11" fill="#7cb342" text-anchor="start" letter-spacing="4" opacity="0.85">HOW I WORK</text>
-  <text x="120" y="214" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Finisher mentality — I see every task through. No half-baked PRs.</text>
-  <text x="120" y="234" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Pixel-perfect obsession — if it's off by 2px, I notice</text>
-  <text x="120" y="254" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Curiosity-first — submerged in AI, studying system design</text>
-  <text x="120" y="274" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Public by default — building in the open, open to feedback</text>
+  <rect width="1200" height="312" fill="#0a1f14"/>
+  <rect width="1200" height="312" fill="url(#panelGrid)"/>
+  <text x="120" y="26" font-family="'SF Mono', monospace" font-size="13" fill="#7cb342" text-anchor="start" letter-spacing="4" opacity="0.85">HOW I WORK</text>
+  <text x="120" y="50" font-family="'SF Mono', monospace" font-size="16" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Finisher mentality — I see every task through. No half-baked PRs.</text>
+  <text x="120" y="74" font-family="'SF Mono', monospace" font-size="16" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Pixel-perfect obsession — if it's off by 2px, I notice</text>
+  <text x="120" y="98" font-family="'SF Mono', monospace" font-size="16" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Curiosity-first — submerged in AI, studying system design</text>
+  <text x="120" y="122" font-family="'SF Mono', monospace" font-size="16" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Public by default — building in the open, open to feedback</text>
+  <text x="120" y="148" font-family="'SF Mono', monospace" font-size="11" fill="#7cb342" text-anchor="start" letter-spacing="4" opacity="0.85">WHAT DRIVES ME</text>
+  <text x="120" y="168" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Building things people use, not portfolio pieces that gather dust</text>
+  <text x="120" y="188" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Where engineering precision meets design intuition</text>
+  <text x="120" y="208" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ AI — knowing where it helps and where it fails</text>
+  <text x="120" y="228" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Distributed systems — architecture that scales and survives</text>
+  <text x="120" y="248" font-family="'SF Mono', monospace" font-size="13" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Graphic design &amp; photography — crafts where millimeters matter</text>
+  <text x="120" y="280" font-family="'SF Mono', monospace" font-size="14" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0" font-style="italic">I don't start things I don't intend to finish. And I don't finish things that aren't worth starting.</text>
+  <line x1="120" y1="302" x2="1080" y2="302" stroke="#7cb342" stroke-width="1" opacity="0.25"/>
 </svg>

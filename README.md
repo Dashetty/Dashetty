@@ -26,7 +26,7 @@
 <img src="assets/registration.svg" width="100%" style="display:block;margin:0;" alt="Registration Marks"/>
 
 <div align="center" style="line-height:0;">
-<a href="https://github.com/Dashetty"><img src="assets/badge_github.svg" alt="GitHub"/></a><a href="https://github.com/Dashetty/Hardeep-Shetty-Portfolio"><img src="assets/badge_portfolio.svg" alt="Portfolio"/></a>
+<a href="https://github.com/Dashetty/Hardeep-Shetty-Portfolio"><img src="assets/badge_portfolio.svg" alt="Portfolio"/></a>
 </div>
 
 <img src="assets/footer.svg" width="100%" style="display:block;margin:0;" alt="End of mat"/>
