@@ -10,7 +10,7 @@
 </div>
 
 <img src="assets/divider_v2_workbench.svg" width="100%" style="display:block;margin:0;" alt=""/>
-<img src="assets/workbench.svg" width="100%" style="display:block;margin:0;" alt="The Workbench"/>
+<img src="assets/workbench.svg?w=2" width="100%" style="display:block;margin:0;" alt="The Workbench"/>
 
 <img src="assets/divider_v2_toolkit.svg" width="100%" style="display:block;margin:0;" alt=""/>
 <div align="center" style="line-height:0;">
