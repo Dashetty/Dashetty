@@ -11,8 +11,8 @@
 
 <div align="center" style="line-height:0;">
 <img src="assets/divider_v2_workbench.svg?v=3" width="100%" style="display:block;margin:0;" alt=""/>
-<img src="assets/how_i_work.svg?v=4" width="100%" style="display:block;margin:0;" alt="How I Work"/>
-<img src="assets/what_drives_me.svg?v=4" width="100%" style="display:block;margin:0;" alt="What Drives Me"/>
+<img src="assets/how_i_work.svg?v=5" width="100%" style="display:block;margin:0;" alt="How I Work"/>
+<img src="assets/what_drives_me.svg?v=5" width="100%" style="display:block;margin:0;" alt="What Drives Me"/>
 </div>
 
 <img src="assets/divider_v2_toolkit.svg?v=3" width="100%" style="display:block;margin:0;" alt=""/>
@@ -22,11 +22,11 @@
 
 <img src="assets/divider_v2_current_cuts.svg?v=3" width="100%" style="display:block;margin:0;" alt=""/>
 <div align="center" style="line-height:0;">
-<img src="assets/currently_cutting.svg?v=2" width="95%" alt="Currently on the Mat"/>
+<img src="assets/currently_cutting.svg?v=3" width="100%" alt="Currently on the Mat"/>
 </div>
 
 <img src="assets/divider_v2_connect.svg?v=3" width="100%" style="display:block;margin:0;" alt=""/>
-<img src="assets/registration.svg?v=2" width="100%" style="display:block;margin:0;" alt="Registration Marks"/>
+<img src="assets/registration.svg?v=4" width="100%" style="display:block;margin:0;" alt="Registration Marks"/>
 
 <div align="center" style="line-height:0;">
 <a href="https://github.com/Dashetty/Hardeep-Shetty-Portfolio"><img src="assets/badge_portfolio.svg?v=2" alt="Portfolio"/></a>
