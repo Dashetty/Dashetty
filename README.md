@@ -10,8 +10,8 @@
 </div>
 
 <img src="assets/divider_v2_workbench.svg?v=2" width="100%" style="display:block;margin:0;" alt=""/>
-<img src="assets/how_i_work.svg?v=2" width="100%" style="display:block;margin:0;" alt="How I Work"/>
-<img src="assets/what_drives_me.svg?v=2" width="100%" style="display:block;margin:0;" alt="What Drives Me"/>
+<img src="assets/how_i_work.svg?v=3" width="100%" style="display:block;margin:0;" alt="How I Work"/>
+<img src="assets/what_drives_me.svg?v=3" width="100%" style="display:block;margin:0;" alt="What Drives Me"/>
 
 <img src="assets/divider_v2_toolkit.svg?v=2" width="100%" style="display:block;margin:0;" alt=""/>
 <div align="center" style="line-height:0;">

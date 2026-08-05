@@ -6,19 +6,22 @@
   </style>
 
     <pattern id="panelGrid" width="12" height="12" patternUnits="userSpaceOnUse">
-      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#142e1f" stroke-width="0.4"/>
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#1a3d2a" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="majorGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="none" stroke="#2d5a3d" stroke-width="0.9"/>
     </pattern>
   </defs>
   <rect width="1000" height="260" fill="#0a1f14"/>
+  <rect width="1000" height="260" fill="url(#majorGrid)"/>
   <rect width="1000" height="260" fill="url(#panelGrid)"/>
 
   <!-- ═══ HOW I WORK ═══ -->
-  <text x="64" y="44" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7cb342" text-anchor="start" letter-spacing="3" opacity="0.95">HOW I WORK</text>
+  <text x="64" y="44" font-family="'JetBrains Mono', monospace" font-size="22" fill="#7cb342" text-anchor="start" letter-spacing="3" opacity="0.95">HOW I WORK</text>
   <line x1="64" y1="58" x2="320" y2="58" stroke="#7cb342" stroke-width="2" opacity="0.5"/>
 
-  <text x="64" y="92" font-family="'JetBrains Mono', monospace" font-size="19" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ I have to finish this mentality —</text>
-  <text x="96" y="122" font-family="'JetBrains Mono', monospace" font-size="19" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">I can't sit happy without seeing my task through.</text>
-  <text x="64" y="152" font-family="'JetBrains Mono', monospace" font-size="19" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ I have a Pixel-perfect obsession — if it's off by 2px, I notice</text>
-  <text x="64" y="182" font-family="'JetBrains Mono', monospace" font-size="19" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Curiosity-first — submerged in AI, studying system design</text>
-  <text x="64" y="212" font-family="'JetBrains Mono', monospace" font-size="19" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">→ Public by default — building in the open, open to feedback</text>
+  <text x="64" y="96" font-family="'JetBrains Mono', monospace" font-size="20" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ "I have to finish this" mentality —</text>
+  <text x="96" y="134" font-family="'JetBrains Mono', monospace" font-size="20" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">I can't sit straight without seeing my task through</text>
+  <text x="64" y="172" font-family="'JetBrains Mono', monospace" font-size="20" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ I have PPO (Pixel-Perfect Obsession) — If it's off by 2px, I'd notice it</text>
+  <text x="64" y="210" font-family="'JetBrains Mono', monospace" font-size="20" fill="#aed581" text-anchor="start" letter-spacing="0" opacity="1.0">+ Public by default — building in the open, open to feedback</text>
 </svg>
